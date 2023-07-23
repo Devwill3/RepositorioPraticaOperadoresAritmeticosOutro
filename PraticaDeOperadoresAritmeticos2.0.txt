@@ -1,0 +1,80 @@
+//PRATICA DE OPERADORES ARITMETICOS 2.0
+
+//Lógica de programação
+var valorUm = 3
+var valorDois = 4
+
+var soma = valorUm + valorDois
+var multiplicacao = valorUm * valorDois
+var subtracao = valorUm - valorDois
+var divisao = valorDois / valorUm
+var modulo = valorDois % valorUm
+
+//EXIBIR NO CONSOLE, LEMBRANDO QUE A VIRGULA SERVE PARA CONCATENAR O VALOR E QUE TUDO QUE ESTA ENTRE ASPAS É RECONHECIDO COMO TEXTO.
+
+console.log("Soma: ", soma)
+console.log("Multiplicacao: ", multiplicacao)
+console.log("Subtração: ", subtracao)
+console.log("Divisão: ", divisao)
+console.log("Modulo: ", modulo)
+
+//SE  VOCÊ QUISER EXIBIR O VALOR MAS NÃO QUER SALVAR ELE EM UMA VARIÁVEL, É SÓ COLOCAR DIRETAMENTE A CONTA,  SEGUE O EXEMPLO ABAIXO.
+
+console.log("Modulo: ", valorDois % valorUm)
+
+//PRIORIDADES, SEGUE O EXEMPLO ABAIXO
+console.log("Conta maior: ", 2 + 2 * 5 + 5)
+//Se você perceber valor é diferente, foi diferente porquê ele segue a ordem da matemática, começando pela multiplicaçao (*). Para resolver esse problema, usaremos penrenteses nos dois primeiros números (),segue o  exemplo abaixo.
+console.log("Conta maior: ", (2 + 2 )* 5 + 5)
+
+//OPERADORES LÓGICOS TRUE = VERDADEIRO E FALSE = FLASO
+//Um sinal de igual (=) serve para atribuir valores, dois sinais de igual (==) serve para comparar valores, segue o exemplo abaixo.
+console.log(2 == 2)
+
+//Ja o sinal de exclamação (!) e o sinal de igual (=) servem para mostrar diferença entre valores, segue o xemplo abaixo.
+console.log(3 != 3)
+
+//O sinal de seta para direita (>) serve para mostrar que o valor da direita é maior que o da esquerda, segue o exemplo abaixo.
+console.log(4 > 3)
+
+//Diferente da seta para direita, a seta para esquerda (<) serve para mostrar que o valor da esquerdda é maior que o da direita, segue o exemplo abaixo.
+console.log(4 < 3)
+
+//Temos também os sinais de maior ou igual (>=) e o menor ou giual (<=). E esses valores  vão dar o mesmo  valor independentemente da forma que eu colocar, segue o  exemplo abaixo.
+console.log(5 >= 5)
+console.log(5 <= 5)
+
+//OUTRA FORMA DE MOSTRAR VALORES NO CONSOLE, SEGUE O EXEMPLO ABAIXO.
+var teste = 2 == 2;
+var testeDois = 3 == 2;
+console.log(teste)
+//Você percebeu que o valor da variável não muda, o que muda é forma que eu ou você faz, a operação que antes era colocada direto no console.log(), gravo ela em uma variável para demonstração, gravo a mesma e jogo a variável no console.log() para exibir no console. E isso é utíl para usarmos os condicionais.
+
+//OPERADORES CONDICIONAIS IF = SE E ELSE = SENÃO, SEGUE O EXEMPLO ABAIXO.
+
+if(2 == 2){
+   console.log("Acertou miseravi")
+}else{
+   console.log("Errouuu") 
+}
+
+if(3 == 2){
+   console.log("Acertou  miseravi") 
+}else{
+   console.log("Errouuu") 
+}
+
+//Vale ressaltar que se eu deixasse o console.log("Errouuu") fora do else, ele executaria os dois do mesmo jeito, tanto o if("Acertou miseravi") quanto o else("Errouuu"). Porquê quando eu coloco o console.log("Errouuu") dentro do else, eu  fecho para, esse código só vai ser execultado caso a expressão dada seja falsa. Ou seja, o else é rstrinjido para se caso algo que seja falso acoteça.
+
+//Vale ressaltar também que a variável teste  pode ser colocada dentro do if também, segue o exemplo abaixo.
+if(teste){
+    console.log("Acertou  miseravi")
+}else{
+    console.log("Errouuu")
+}
+
+if(testeDois){
+    console.log("Acertou miseravi")
+}else{
+    console.log("Errouu")
+}
